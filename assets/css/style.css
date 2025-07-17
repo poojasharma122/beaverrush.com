@@ -1,0 +1,800 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Manrope", sans-serif;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: 0.6px;
+}
+
+.pt-8 {
+    padding-top: 5rem;
+}
+
+.pb-8 {
+    padding-bottom: 5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    /* color:; */
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.aoshidden {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.figma_heading {
+    color: #111111;
+    font-weight: 700;
+    line-height: 3.125rem;
+    font-size: 2.652rem;
+}
+
+.p {
+    color: #444444;
+    font-weight: 400;
+    font-size: 1.125rem;
+    font-style: normal;
+}
+
+
+
+.site_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header CSS Start */
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
+    transition: all 0.3s ease;
+    padding: 0.9375rem 0;
+}
+
+.header.fixed_header {
+    background-color: #030303;
+    box-shadow: #020202d7 0px 2px 10px;
+
+}
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.brand {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.menu-toggle {
+    display: none;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    margin: auto 0;
+    z-index: 60;
+    background: url("../image/menu.png") no-repeat center / contain;
+}
+
+
+
+.menu {
+    display: flex;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-link:hover {
+    color: #ff9c19;
+}
+
+.menu-item {
+    margin: 0;
+}
+
+.menu-link.active,
+.menu-link:hover {
+    color: #ff9c19;
+}
+
+.menu-link {
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+
+
+.menu-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    border-radius: 5px;
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.menu-link.active::after,
+.menu-link:hover::after {
+    transform: scaleX(0.9);
+}
+
+.menu-close {
+    display: none;
+    background: url(../image/close.png) no-repeat center / cover;
+}
+
+.header.white_bg .menu-toggle {
+    filter: invert(1);
+}
+
+.logo {
+    background-image: url(../image/logo_b.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 80px;
+    width: 90px;
+    display: inline-block;
+    background-position: left;
+}
+
+/* Header CSS End */
+
+
+/* hero sec */
+.hero-imgWrap {
+    height: 100%;
+}
+
+.hero-img {
+    background-image: url("../image/site_banner.png");
+    height: 420px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.hero-section {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content {
+    padding-block: 5rem;
+}
+
+.hero-content h1 {
+    font-size: 3.125rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    line-height: 3.125rem;
+}
+
+.hero-content h1 span {
+    background: linear-gradient(0deg, #ff9c19 40%, #ffdd2d 110%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.hero-btn {
+    display: flex;
+    gap: 26px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.main-btn {
+    display: inline-block;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    color: #ffc02e;
+    cursor: pointer;
+    font-weight: 600;
+    z-index: 5;
+    transition: all .4s ease-in-out;
+    background-color: transparent;
+    border: 1px solid #ffc02e;
+    overflow: hidden;
+}
+
+.main-btn:hover {
+    background-color: #ffc02e;
+    border-color: transparent;
+    color: #000;
+
+}
+
+.socialCasino_inner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+.sec_title {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: start;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #ffc02e;
+}
+
+.socialCasino_innerSec {
+    width: 31%;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+    border: 1px solid #4a4a4a;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.socialCasino_innerSec:hover .socialCasino_content {
+    transform: translateY(0px);
+    overflow: hidden;
+    padding: 30px 0;
+    background: -webkit-linear-gradient(bottom, rgba(255, 0, 0, 0), rgb(255, 192, 46));
+    background: -o-linear-gradient(bottom, rgba(255, 0, 0, 0), rgb(255, 192, 46));
+    background: -moz-linear-gradient(bottom, rgba(255, 0, 0, 0), rgb(255, 192, 46));
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgb(255, 192, 46));
+}
+
+.socialCasino_innerSec:hover .socialCasino_content h4 {
+    margin-bottom: 1rem;
+}
+
+.socialCasino_imgwrap {
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.socialCasino_img:hover {
+    transform: scale(1.1);
+}
+
+.socialCasino_img {
+    background: url("../images/social-casino-games-img1.png") repeat scroll #282828;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 280px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    border-radius: 4px;
+}
+
+.socialCasino_img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0 0 0 / 50%);
+    z-index: 2;
+    border-radius: 4px;
+}
+
+.socialCasino_content {
+    bottom: 0;
+    position: absolute;
+    transform: translateY(3.5rem);
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+    transition: 0.3s ease-in-out;
+}
+
+.socialCasino_content h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.socialCasino_btn {
+    padding: 10px 24px;
+}
+
+.socialCasino_btn:hover {
+    background-color: #fff;
+    color: #ffc02e;
+    border-color: transparent;
+}
+
+/* hero section css end */
+
+
+
+/* after banner css start  */
+
+.after_banner_image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.after_banner_text h2 span {
+    background: linear-gradient(0deg, #ff9c19 40%, #ffdd2d 110%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.after_banner_text h2 {
+    font-size: 3.125rem;
+    font-weight: 700;
+    line-height: 2.625rem;
+    margin-bottom: 2rem;
+}
+
+/* after banner css end */
+
+
+/* game section css start */
+
+.game_image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+
+}
+
+.card_inner {
+    border: 2px solid #ffffff42;
+    padding: 20px;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+}
+
+.game {
+    max-width: 135px;
+    margin: 0 auto;
+}
+
+.card_inner:hover {
+    transform: translateY(-10px);
+}
+
+/* game section css end */
+
+
+/* why choose us css start */
+.why_choose_image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 415px;
+}
+
+.why_choose_heading {
+    font-size: 3.125rem;
+    font-weight: 700;
+    line-height: 2.625rem;
+    margin-bottom: 2rem;
+}
+
+.why_choose_text {
+    margin-top: 90px;
+}
+
+.why_choose_text li {
+    font-size: 1rem;
+    list-style-type: disc;
+}
+
+/* why choose us css end */
+
+
+
+/* form section css start */
+
+.form_section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+
+}
+
+.contact-card {
+    background-color: transparent;
+    color: #fff;
+    max-width: 850px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contact-card h2 {
+    font-size: 3.125rem;
+    font-weight: 700;
+    line-height: 2.625rem;
+    margin-bottom: 2rem;
+}
+
+.contact-card p {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 25px;
+}
+
+.form-control {
+    background-color: #e5e5e5;
+    border: none;
+    border-radius: 20px;
+    padding: 14px 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-send {
+    width: 100%;
+    padding: 12px;
+    border-radius: 15px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #ffc02e;
+    border-color: transparent;
+    color: #000;
+}
+
+.btn-send:hover {
+    color: #fff;
+    background-color: none;
+}
+
+/* footer css start */
+
+.footer_inner {
+    max-width: 1076px;
+    margin: 0 auto;
+}
+
+.footer_pages a {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.footer_end:hover {
+    color: #ff9c19;
+}
+
+.footer_pages a {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.footer_pages a:hover {
+    color: #ff9c19;
+}
+
+.image_footer_one {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 150px;
+}
+
+.image_footer_two {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 150px;
+}
+
+.footer_images {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+
+
+/* FAQs css start */
+.wrapper {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: rgb(100 100 111 / 60%) 0px 7px 29px 0px;
+    padding: 2rem;
+}
+
+.faqs.second {
+    background: #101c44;
+}
+
+
+.faqs-container {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px 0 rgb(0, 0, 0, 0.25);
+    margin: 20px 0;
+}
+
+.question {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 20px 80px 20px 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.question::after {
+    content: "\002B";
+    font-size: 2.2rem;
+    position: absolute;
+    right: 20px;
+    transition: 0.2s;
+}
+
+.question.active::after {
+    transform: rotate(45deg);
+}
+
+.answercont {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.answer {
+    padding: 0 20px 20px;
+    line-height: 1.5rem;
+}
+
+.question.active+.answercont {}
+
+@media screen and (max-width: 790px) {
+    html {
+        font-size: 14px;
+    }
+
+}
+
+
+
+/* tomb of gold page css start */
+
+.iframe_text li {
+    font-size: 1rem;
+    list-style-type: disc;
+}
+
+.ifram-box {
+    height: 500px;
+    width: 100%;
+}
+
+.ifram-box iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.iframe_text_section {
+    max-width: 776px;
+    margin: 0 auto;
+    box-shadow: rgb(100 100 111 / 60%) 0px 7px 29px 0px;
+    padding: 2rem;
+    margin-top: 80px;
+}
+
+
+
+/* privacy page css start */
+
+.personal_banner {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 100%;
+    height: 28.625rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.personal_banner::before {
+    content: '';
+    position: absolute;
+    background: rgba(0 0 0 / 60%);
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.banner_box {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    width: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.banner_box h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2.125rem;
+}
+
+.banner_box h2 span {
+    background: linear-gradient(0deg, #ff9c19 40%, #ffdd2d 110%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.privacy_inner_text {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 2rem;
+    box-shadow: rgb(100 100 111 / 60%) 0px 7px 29px 0px;
+}
+
+.main_inner_text h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 40px;
+    padding-bottom: 1rem;
+}
+
+.main_inner_text h4 {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    padding-bottom: 16px;
+    line-height: 30px;
+}
+
+.main_inner_text ul li {
+    position: relative;
+    padding-bottom: 8px;
+    padding-left: 28px;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 25px;
+}
+
+.main_inner_text ul li::before {
+    position: absolute;
+    content: '.';
+    font-size: 3rem;
+    color: #fff;
+    top: -14px;
+    left: 2px;
+}
+
+.main_inner_text p{
+    color: #fff;
+    font-size: 1rem;
+    line-height: 25px;
+}
+
+.main_inner_text p a {
+    color: #fff;
+}
+
+.main_inner_text p a:hover {
+    color: #ff9c19;
+}
+
+/* privacy page css end */
