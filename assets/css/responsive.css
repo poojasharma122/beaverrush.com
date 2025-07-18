@@ -1,8 +1,5 @@
 @media screen and (max-width:991px) {
 
-    .header.fixed_header .menu-link {
-        color: #fff;
-    }
 
     .menu {
         position: fixed;
@@ -69,6 +66,11 @@
         height: 350px;
     }
 
+    .menu-link {
+    padding: 8px;
+    font-size: 16px;
+}
+
 }
 
 @media screen and (max-width:575px) {
@@ -133,6 +135,15 @@
         height: 280px;
         width: 100%;
     }
+
+    .personal_banner {
+        height: 20.625rem;
+    }
+
+    .banner_box h2 {
+        font-size: 2rem;
+        line-height: 2.125rem;
+    }
 }
 
 
@@ -140,10 +151,21 @@
     .hero-content {
         padding-block: 1rem;
     }
+
     .wrapper.show {
-    right: 15px;
-}
-.wrapper {
-    max-width: 320px;
+        right: 15px;
+    }
+
+    .wrapper {
+        max-width: 320px;
+    }
+
+    .main_inner_text h2 {
+        font-size: 1.75rem;
+        line-height: 28px;
+    }
+
+    .contact-card h2 {
+    line-height: 2.15rem;
 }
 }

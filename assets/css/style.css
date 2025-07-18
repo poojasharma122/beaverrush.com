@@ -404,7 +404,7 @@ ul {
 .after_banner_text h2 {
     font-size: 3.125rem;
     font-weight: 700;
-    line-height: 2.625rem;
+    line-height: 3.125rem;
     margin-bottom: 2rem;
 }
 
@@ -572,6 +572,7 @@ ul {
     color: #ff9c19;
     font-size: 1rem;
     font-weight: 500;
+    line-height: 18px;
 }
 
 .footer_pages a:hover {
@@ -607,7 +608,7 @@ ul {
 
 
 /* FAQs css start */
-.wrapper {
+.wrapper_faqs {
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
@@ -743,8 +744,8 @@ ul {
 
 .banner_box h2 {
     font-size: 3rem;
-    font-weight: 700;
-    line-height: 2.125rem;
+    font-weight: 800;
+    line-height: 3.125rem;
 }
 
 .banner_box h2 span {
@@ -846,7 +847,7 @@ header h2 {
   margin-top: 16px;
 }
 .wrapper .data p {
-  color: #333;
+  color: #000;
   font-size: 16px;
 }
 .data p a {
@@ -874,7 +875,7 @@ header h2 {
   transition: all 0.2s ease;
 }
 .buttons #acceptBtn:hover {
-  background-color: #ffc02e;
+  background-color: #fcb207;
 }
 #declineBtn {
   border: 2px solid #ffc02e;
@@ -884,4 +885,30 @@ header h2 {
 #declineBtn:hover {
   background-color: #ffc02e;
   color: #fff;
+}
+
+
+
+     table {
+      width: 100%;
+    }
+
+    th, td {
+      border: none !important;
+      padding: 12px 8px;
+      vertical-align: top;
+      background-color: #000 !important;
+      color: #fff !important;
+    }
+
+    th {
+      font-weight: bold;
+    }
+
+    td strong {
+      font-weight: bold;
+    }
+
+    .iframe_text h4 {
+    margin-left: -3px;
 }
