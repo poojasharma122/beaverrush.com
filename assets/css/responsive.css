@@ -140,4 +140,10 @@
     .hero-content {
         padding-block: 1rem;
     }
+    .wrapper.show {
+    right: 15px;
+}
+.wrapper {
+    max-width: 320px;
+}
 }

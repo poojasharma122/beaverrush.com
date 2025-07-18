@@ -507,6 +507,12 @@ ul {
     margin-bottom: 2rem;
 }
 
+.contact-card h2 span {
+    background: linear-gradient(0deg, #ff9c19 40%, #ffdd2d 110%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .contact-card p {
     color: #fff;
     margin-bottom: 20px;
@@ -542,7 +548,7 @@ ul {
 
 .btn-send:hover {
     color: #fff;
-    background-color:#ffb301 ;
+    background-color: #ffb301;
 }
 
 /* footer css start */
@@ -803,3 +809,79 @@ ul {
 }
 
 /* privacy page css end */
+
+
+
+
+.wrapper {
+  position: fixed;
+  bottom: 50px;
+  right: -370px;
+  max-width: 345px;
+  width: 100%;
+  background: #949393;
+  border-radius: 8px;
+  padding: 15px 25px 22px;
+  transition: right 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+.wrapper.show {
+  right: 20px;
+}
+.wrapper header {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+header i {
+  color: #ffc02e;
+  font-size: 32px;
+}
+header h2 {
+  color: #ffc02e;
+  font-weight: 500;
+}
+.wrapper .data {
+  margin-top: 16px;
+}
+.wrapper .data p {
+  color: #333;
+  font-size: 16px;
+}
+.data p a {
+  color: #ffc02e;
+  text-decoration: none;
+}
+.data p a:hover {
+  text-decoration: underline;
+}
+.wrapper .buttons {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.buttons .button {
+  border: none;
+  color: #fff;
+  padding: 8px 0;
+  border-radius: 4px;
+  background: #ffc02e;
+  cursor: pointer;
+  width: calc(100% / 2 - 10px);
+  transition: all 0.2s ease;
+}
+.buttons #acceptBtn:hover {
+  background-color: #ffc02e;
+}
+#declineBtn {
+  border: 2px solid #ffc02e;
+  background-color: #fff;
+  color: #ffc02e;
+}
+#declineBtn:hover {
+  background-color: #ffc02e;
+  color: #fff;
+}

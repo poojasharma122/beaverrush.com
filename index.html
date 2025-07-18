@@ -121,7 +121,8 @@
                     <div class="row g-4">
                         <div class="col-md-4 col-sm-6">
                             <div class="card_inner" data-aos="fade-right" data-aos-duration="1200">
-                                <div class="game_image" style="background-image: url(assets/image/Tomb-of-Gold.webp);"></div>
+                                <div class="game_image" style="background-image: url(assets/image/Tomb-of-Gold.webp);">
+                                </div>
                                 <div class="card_text text-center">
                                     <h3 class="text-white py-4">Tomb of Gold</h3>
                                     <div class="hero-btn game">
@@ -133,7 +134,8 @@
 
                         <div class="col-md-4 col-sm-6">
                             <div class="card_inner" data-aos="fade-up" data-aos-duration="1200">
-                                <div class="game_image" style="background-image: url(assets/image/invading-vegas_.jpg);"></div>
+                                <div class="game_image"
+                                    style="background-image: url(assets/image/invading-vegas_.jpg);"></div>
                                 <div class="card_text text-center">
                                     <h3 class="text-white py-4">Invading Vegas</h3>
                                     <div class="hero-btn game">
@@ -145,7 +147,8 @@
 
                         <div class="col-md-4 col-sm-6">
                             <div class="card_inner" data-aos="fade-left" data-aos-duration="1200">
-                                <div class="game_image" style="background-image: url(assets/image/WildestGambit.jpg);"></div>
+                                <div class="game_image" style="background-image: url(assets/image/WildestGambit.jpg);">
+                                </div>
                                 <div class="card_text text-center">
                                     <h3 class="text-white py-4">Wildest Gambit</h3>
                                     <div class="hero-btn game">
@@ -284,9 +287,53 @@
 
 
 
+
+
+        <div class="wrapper">
+            <header>
+                <i class="bx bx-cookie"></i>
+                <h2>Cookies Consent</h2>
+            </header>
+
+            <div class="data">
+                <p>We use cookies to enhance your experience, improve performance, and understand how our
+                    site is used.By continuing to browse BeaverRush,
+                    <a href="#"> Read more...</a>
+                </p>
+            </div>
+
+            <div class="buttons">
+                <button class="button" id="acceptBtn">Accept</button>
+                <button class="button" id="declineBtn">Decline</button>
+            </div>
+        </div>
+
+
+
+
     </main>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/aos.js"></script>
+    <script>
+        const cookieBox = document.querySelector(".wrapper"),
+            buttons = document.querySelectorAll(".button");
+        const executeCodes = () => {
+            if (document.cookie.includes("codinglab")) return;
+            cookieBox.classList.add("show");
+
+            buttons.forEach((button) => {
+                button.addEventListener("click", () => {
+                    cookieBox.classList.remove("show");
+
+                    if (button.id == "acceptBtn") {
+
+                        document.cookie = "cookieBy= codinglab; max-age=" + 60 * 60 * 24 * 30;
+                    }
+                });
+            });
+        };
+        window.addEventListener("load", executeCodes);
+    </script>
     <script src="assets/js/main.js"></script>
 </body>
 
