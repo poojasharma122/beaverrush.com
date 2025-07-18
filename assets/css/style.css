@@ -637,6 +637,7 @@ ul {
     position: absolute;
     right: 20px;
     transition: 0.2s;
+    color: #ff9c19;
 }
 
 .question.active::after {
@@ -786,7 +787,7 @@ ul {
     left: 2px;
 }
 
-.main_inner_text p{
+.main_inner_text p {
     color: #fff;
     font-size: 1rem;
     line-height: 25px;
