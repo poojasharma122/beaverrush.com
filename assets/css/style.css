@@ -228,6 +228,8 @@ ul {
 
 .hero-content {
     padding-block: 5rem;
+    max-width: 806px;
+    margin: 0 auto;
 }
 
 .hero-content h1 {
