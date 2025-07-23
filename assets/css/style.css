@@ -194,11 +194,11 @@ ul {
 }
 
 .logo {
-    background-image: url(../image/logo_second.png);
+    background-image: url(../image/logo.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    height: 80px;
-    width: 90px;
+    height: 75px;
+    width: 160px;
     display: inline-block;
     background-position: left;
 }
